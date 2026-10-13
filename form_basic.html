@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Профіль — Камінський Назар</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1e293b;
+      padding: 18px 40px;
+      color: #38bdf8;
+      border-bottom: 1px solid #334155;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-menu a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .main-content {
+      flex: 1;
+      max-width: 950px;
+      margin: 30px auto;
+      padding: 0 20px;
+      width: 100%;
+    }
+
+    .profile-card {
+      display: flex;
+      gap: 30px;
+      background-color: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .avatar-figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .avatar-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .avatar-caption {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #38bdf8;
+      font-style: italic;
+    }
+
+    .info-block {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .info-block h1 {
+      margin-bottom: 5px;
+      color: #f8fafc;
+    }
+
+    .role {
+      color: #38bdf8;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      line-height: 1.5;
+      color: #cbd5e1;
+      margin-bottom: 15px;
+    }
+
+    .contacts {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .skills-section {
+      margin-top: 30px;
+    }
+
+    .skills-section h2 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill-card {
+      flex: 1 1 200px;
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      color: #f8fafc;
+      border: 1px solid #334155;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #090d16;
+      color: #64748b;
+      padding: 20px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">NazarDev</div>
+    <nav class="nav-menu">
+      <a href="#">Головна</a>
+      <a href="#">Про мене</a>
+      <a href="#">Проєкти</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="profile-card">
+      <div class="avatar-block">
+        <figure class="avatar-figure">
+          <img src="nazar_photo.jpg" alt="Камінський Назар" class="avatar-img" title="Камінський Назар" />
+          <figcaption class="avatar-caption">Камінський Назар</figcaption>
+        </figure>
+      </div>
+      <div class="info-block">
+        <h1>Камінський Назар</h1>
+        <p class="role">Full-Stack Developer / Студент</p>
+        <p class="bio">
+          Займаюся розробкою серверної логіки та адаптивної верстки для вебдодатків із використанням Flexbox і новітніх CSS-модулів.
+        </p>
+        <div class="contacts">
+          <span>Email: nazar.kaminskyi@example.com</span>
+          <span>Місто: Біла Церква</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <h2>Технічний Стек</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5 / CSS3 / Flexbox</div>
+        <div class="skill-card">JavaScript / Node.js</div>
+        <div class="skill-card">Git / GitHub Workflows</div>
+        <div class="skill-card">REST API / Databases</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Камінський Назар. Звіт з практичної роботи №19.</p>
+  </footer>
+
+</body>
+</html>

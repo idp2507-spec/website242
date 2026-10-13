@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #4a90e2;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+}
